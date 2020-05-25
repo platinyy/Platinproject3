@@ -1,0 +1,169 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Barlow', sans-serif;
+}
+.title{
+text-align:center;
+}
+.hone{
+	background:black;
+	color:white;
+	height:70px;
+	margin-top:0px;
+	padding-top:15px;
+	text-transform:uppercase;
+}
+.para{
+max-width:250px;
+margin:auto;
+padding-bottom:20px;
+
+}
+.first,
+.second{
+	border:none;
+}
+.maini{
+	border-top:10px solid black;
+}
+.border1{
+	border-top:2px solid black;
+	margin-top:5px;
+	margin-bottom:20px;
+}
+.element{
+	display:flex;
+	flex-direction:column;
+}
+.widthe{
+	width:50%;
+}
+.checkboxii,
+.radioo{
+	margin-top:15px;
+	margin-bottom:15px;
+}
+[type="checkbox"],
+[type="radio"],
+[id="bio"]{
+	margin-top:15px;
+}
+.margin{
+	padding-bottom:20px;
+}
+[id="bio"]{
+	min-height:70px;
+	background:#F5F5F5;
+	
+}
+[type="submit"]{
+	background:#4682B4;
+	color:white;
+	font-weight:bold;
+}
+[id="bio"]{
+	width:100%;
+	
+}
+input[name*="user"]{
+	font-size:20px;
+	height:auto;
+	padding:10px;
+	margin:10px 0;
+	background:#F5F5F5;
+}
+input[name*="user"]:focus,
+[id="state"]:focus
+{
+border-color:black;
+}
+
+button[type^="sub"] {
+	font-size:20px;
+	height:auto;
+	padding:10px;
+	margin:10px 0;
+}
+[id="state"]{
+	font-size:16px;
+	height:auto;
+	padding:10px;
+	margin:10px 0;
+	background:#F5F5F5
+}
+.legenda{
+	padding-top:15px;
+	padding-bottom:10px;
+	font-weight:bold;
+	font-size:20px;
+	margin-top:10px;
+}
+
+
+
+.maini{
+	margin-left:14px;
+	margin-right:14px;
+}
+input[type="checkbox"] + label,
+input[type="radio"] + label{
+	margin-left:10px;
+}
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label{
+	font-weight:bold;
+} 
+.button{
+	display:flex;
+	flex-direction:column;
+}
+footer{
+text-align:center;
+padding-bottom:15px;
+padding-top:15px;
+}
+
+
+@media(min-width: 768px){
+	form,
+	.hthree,
+	.para{
+		width:60%;
+		margin:0 auto;
+		
+	}
+	.para{
+		max-width:1000px;
+		margin-top:10px;
+		padding-bottom:30px;
+		margin-bottom:5px;
+		border-bottom:5px solid;
+	}
+	.hthree{
+		padding-top:25px;
+	}
+	.element{
+	flex-direction:row;
+	justify-content:space-between;
+	align-content:center;
+}
+.maini{
+	border:none;
+}
+[name*="user"]{
+	flex-grow:1;
+}
+label[class="flex"]{
+	flex-basis:150px;
+	 align-self:center;
+}
+label[for="zip"]{
+	flex-basis:150px;
+	align-self:center;
+}
+[id="zip"]{
+background:red;
+}
+}
