@@ -4,6 +4,10 @@
 body{
 	font-family: 'Barlow', sans-serif;
 }
+::placeholder{
+	text-align:right;
+	opacity:0.5;
+}
 .title{
 text-align:center;
 }
@@ -27,6 +31,7 @@ padding-bottom:20px;
 }
 .maini{
 	border-top:10px solid black;
+	background:#F0F8FF;
 }
 .border1{
 	border-top:2px solid black;
@@ -38,7 +43,7 @@ padding-bottom:20px;
 	flex-direction:column;
 }
 .widthe{
-	width:50%;
+	width:30%;
 }
 .checkboxii,
 .radioo{
@@ -73,11 +78,13 @@ input[name*="user"]{
 	padding:10px;
 	margin:10px 0;
 	background:#F5F5F5;
+	
 }
 input[name*="user"]:focus,
 [id="state"]:focus
 {
 border-color:black;
+outline:none;
 }
 
 button[type^="sub"] {
@@ -104,7 +111,7 @@ button[type^="sub"] {
 
 
 .maini{
-	margin-left:34px;
+	margin-left:14px;
 	margin-right:14px;
 }
 input[type="checkbox"] + label,
@@ -133,6 +140,7 @@ padding-top:15px;
 		width:60%;
 		margin:0 auto;
 		
+		
 	}
 	.para{
 		max-width:1000px;
@@ -151,8 +159,16 @@ padding-top:15px;
 }
 .maini{
 	border:none;
+	
 }
-[name*="user"]{
+
+input[id="name"],
+input[id="mail"],
+input[id="tel"],
+input[id="street"],
+input[id="city"],
+select[id="state"]
+{
 	flex-grow:1;
 }
 label[class="flex"]{
@@ -163,7 +179,10 @@ label[for="zip"]{
 	flex-basis:150px;
 	align-self:center;
 }
-[id="zip"]{
-background:red;
+input[id="zip"]{
+margin-right:auto;
+max-width:200px;
 }
+
+	
 }
